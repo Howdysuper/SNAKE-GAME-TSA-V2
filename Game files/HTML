@@ -12,7 +12,7 @@
         <canvas id="gameCanvas2" width="400" height="400"></canvas> <!-- Canvas for Player 2 -->
     </div>
     <button id="startButton">Start Game</button> <!-- Start button -->
-    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+    <script src="Game files/java.js"></script> <!-- Link to the JavaScript file -->
 </body>
 </html>
 
