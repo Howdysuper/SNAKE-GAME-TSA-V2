@@ -1,0 +1,25 @@
+body {
+    display: flex; /* Center the game container */
+    flex-direction: column; /* Arrange elements in a column */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #fff; /* White background */
+}
+
+.game-container {
+    display: flex; /* Display canvases side by side */
+    gap: 20px; /* Space between canvases */
+}
+
+canvas {
+    border: 1px solid #000; /* Black border for canvases */
+}
+
+button {
+    margin-top: 20px; /* Space above the button */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 16px; /* Font size of the button text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
