@@ -1,17 +1,17 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #000;
+    display: flex; /* Center the game container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #fff; /* White background */
 }
 
 .game-container {
-    display: flex;
-    gap: 20px;
+    display: flex; /* Display canvases side by side */
+    gap: 20px; /* Space between canvases */
 }
 
 canvas {
-    border: 1px solid #fff;
+    border: 1px solid #000; /* Black border for canvases */
 }
