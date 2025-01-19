@@ -139,4 +139,17 @@ function drawApple(ctx, apple) {
 }
 
 function getRandomInt(min, max) {
-    return Math.floor(Math.random() *[_{{{CITATION{{{_1{](https://github.com/Hami-Lemon/note/tree/8e7ae5b41e53c2cf9d2c6418e30c87123b8037b4/Java%2Fweb%E5%BC%80%E5%8F%91%2F%E5%89%8D%E7%AB%AF.md)
+    return Math.floor(Math.random() * (max - min)) + min; // Generate a random integer between min and max
+}
+
+function resetGame() {
+    snake1 = [{ x: 60, y: 200 }]; // Reset Player 1's snake
+    snake2 = [{ x: 340, y: 200 }]; // Reset Player 2's snake
+    direction1 = 'RIGHT'; // Reset Player 1's direction
+    direction2 = 'LEFT'; // Reset Player 2's direction
+    apple1 = { x: getRandomInt(0, canvasWidth / gridSize) * gridSize, y: getRandomInt(0, canvasHeight / gridSize) * gridSize }; // Reset Player 1's apple
+    apple2 = { x: getRandomInt(0, canvasWidth / gridSize) * gridSize, y: getRandomInt(0, canvasHeight / gridSize) * gridSize }; // Reset Player 2's apple
+    score1 = 0; // Reset Player 1's score
+    score2 = 0; // Reset Player 2's score
+    gameRunning = false; // Set the game running flag to false
+}
